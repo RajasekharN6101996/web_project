@@ -1,0 +1,110 @@
+.d9{
+    width: 100%;
+    height: 700px;
+    background: white;
+}
+.i9{
+    margin-left: 500px;
+    width: 350px;
+    height: 30px;
+    border: 0px;
+    border-bottom: 2px solid gold;
+}
+.tt{
+    height: 100px;
+}
+.b9{
+    padding: 10px;
+    margin-left: 610px;
+    width: 150px;
+    background: black;
+    color: white;
+    border: 0;
+}
+.d9 li{
+    display: inline;
+}
+.d9 a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: silver;
+}
+.d9 nav{
+    margin-top: 100px;
+}
+.d9 p{
+    margin-left: 70px;
+}
+.p9{
+    float: right;
+    margin-top: -70px;
+    margin-right: 100px;
+}
+.p9s{
+    font-size: 50px;
+}
+.p9s1{
+    font-size: 30px;
+    position: relative;
+    top: -7px;
+}
+.p91{
+    text-align: right;
+    float: right;
+    margin-right: -200px;
+}
+@media only screen and (max-width:768px){
+    .i9{
+        margin-left: 150px;
+        width: 450px;
+        height: 40px;
+    }
+    .b9{
+        margin-left: 300px;
+    }
+    .d9 ul{
+        width: 380px;
+    }
+    .d9 p{
+        margin-left: 40px;
+    }
+    .p9{
+        margin-top: -120px;
+        margin-right: 45px;
+    }
+    .p91{
+        width: 150px;
+        margin-top: -70px;
+        margin-right: 40px;
+    }
+}
+@media only screen and (max-width:425px){
+    .i9{
+        margin-left: 50px;
+        width: 330px;
+        height: 40px;
+    }
+    .b9{
+        margin-left: 150px;
+    }
+    .d9{
+        height: 700px;
+    }
+    .d9 ul{
+        width: 380px;
+    }
+    .d91{
+        text-align: center;
+    }
+    .p9{
+        margin-top: 0px;
+        margin-right: 150px;
+    }
+    .p91{
+        width: 250px;
+        margin-top: 0px;
+        margin-right: 80px;
+        text-align: center;
+    }
+
+}

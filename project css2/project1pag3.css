@@ -1,0 +1,36 @@
+.d3{
+    width: 100%;
+    background-color: silver;
+    height: 690px;
+   
+}
+.g2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.g2 > div{
+    text-align: center;
+
+}
+.i2{
+    font-size: 100px;
+    color: gold;
+}
+@media only screen and (max-width:768px){
+    .g2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .d3{
+        height: 1100px;
+    }
+}
+@media only screen and (max-width:425px){
+    .g2{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .d3{
+        height: 2000px;
+    }
+}

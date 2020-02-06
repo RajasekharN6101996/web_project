@@ -1,0 +1,229 @@
+.first{
+    margin-left: 3%;
+}
+span>a{
+    color:rgb(230, 47, 169)
+}
+.sp{
+    margin-left: 60%;
+}
+.tr{
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    height: 200px;
+    background-color:white;
+    opacity: 0.3;
+}
+.logout{
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    left: 1280px;
+}
+.div1{
+    width:100%;
+    height:100%;
+    background-image:url("./windows-10-hero-wallpaper-4k_4611778.jpg");
+    background-size: 1400px;
+
+}
+.img1{
+    position: absolute;
+    top: 95px;
+    display: inline-block;
+    height:90%;
+    width:30%; 
+    z-index: 1;
+}
+.img2{
+    position: relative;
+    top:50px;
+    left:700px;
+}
+.span1{
+    position: relative;
+    top:150px;
+    left:22%;
+    font-size:40px;
+    z-index: 1;
+}
+
+.span2{
+left:41.5%
+}
+.span4{
+    position:relative;
+    font-weight: bold;
+    top:30%;
+    left:33%;
+    font-size: 25px;
+}
+.button1{
+    position: relative;
+    top: 40%;
+    left:-150px;
+    height:60px;
+    color:white;
+    border:1px solid black;
+    background-image: linear-gradient(to right,darkblue,rgb(226, 38, 38));
+    border-radius: 55px;
+    width:300px;
+    
+}
+.nav{
+    width: 100%;
+    position: absolute;
+    top:620px;
+    left:500;
+    font-size: 22px;
+}
+.n1:hover{
+    color:white;
+}
+.p1{
+    text-align: center;
+    font-size:25px;
+    background-color: white;
+}
+.div2{
+    width:100%;
+    height:250px;
+    display:inline-block;
+}
+.img3{
+    margin-left: -20px;
+    width:100%;
+    height:100%;
+}
+.div3{
+    margin-left: 3%;
+    width: 47%;
+    display:inline-block;
+    
+}
+.div4{
+    margin-top: -270px;
+    margin-left:645px;
+    padding-left:20px;
+    background-color:rgb(230, 224, 224);
+    width: 49%;
+    height:250px;
+}
+.button2{
+    color:white;
+    border-radius: 55px;
+    height:40px;
+    background-color:rgb(230, 47, 169);
+}
+.div5{
+    
+    width: 45.5%;
+    margin-left: 20px;
+    margin-top:8%;
+    background-color:rgb(230, 224, 224);
+    padding-left:20px;
+    display:inline-block;
+}
+.div6{
+    margin-top: 8%;
+    width: 50%;
+    float: right;
+    height:245px
+}
+.div7{
+    width:97%;
+    background-color:rgb(230, 224, 224);
+    height:250px;
+    padding:20px;
+    display: inline-block;
+}
+
+.button3::after{
+    content:"";
+    background-color:rgb(180, 172, 172);
+    color: red;
+    width:3px;
+    height:220px;
+    display:inline-block;
+    margin-top: -260%;
+    margin-left: 750%;
+}
+.div8{
+    float:right;
+    margin-top:-16%;
+    position: relative;
+    left:-6%;
+}
+.p2{
+    text-align: center;
+    margin-top:5%;
+    font-size:25px;
+}
+.div9{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:0px;
+    background-color:rgb(180, 172, 172);
+    grid-auto-rows: 150px;
+    width:100%
+}
+.p5{
+    margin-left: 50px;
+}
+.p5>span{
+    float: right;
+    margin-right: 100px;
+}
+
+.grid_image{
+    width:100%;
+    height: 100%;;
+}
+.div10{
+    width:100%;
+    height:300px;
+    background-color:darkblue;
+}
+.p3{
+    text-align: center;
+    padding-top: 15px;
+    font-size:25px;
+    color:white;
+    margin-top:0%;
+}   
+.div10>div{
+    display:inline-block;
+    margin-left: 4%;
+    width:20%;
+    height:200px
+} 
+.div11{
+    width:100%;
+    height:70px;
+    background-color:rgb(240, 6, 84);
+    margin-top: -2%;
+}
+.p4{
+    color:rgb(173, 168, 168);
+    font-size: 25px;
+    padding-top: 20px;
+    text-align: center;
+}
+.span5{
+    opacity:1.0;
+    color:white;
+}
+.button4{
+    color:black;
+    background-color: white;
+    width: 300px;
+    border-radius: 55px;
+    height:40px;
+    font-size: 20px;
+}
+.ic{
+    color: red;
+    margin-left: 10px;
+
+}

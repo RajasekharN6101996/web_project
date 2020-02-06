@@ -1,0 +1,51 @@
+.d7{
+    margin-top: 80px;
+    width: 100%;
+    height: 300px;
+    background: silver;
+}
+.d7 h2{
+    margin-left: 40px;
+}
+i.fab.fa-bitcoin.ic7{
+    /* position: relative;
+    top:-90px;
+    left: 0px; */
+    font-size: 50px;
+    color: gold;
+}
+.d72{
+    width: 300px;
+    float: right;
+    text-align: center;
+    margin-top: -100px;
+    margin-right: 100px;
+}
+.d72 p{
+    opacity: 0.5;
+}
+@media only screen and (max-width:768px){
+    .d7 h2{
+        width: 400px;
+        margin-left: 10px;
+        font-size: 20px;
+    }
+    .d72{
+        margin-top: -130px;
+        margin-right: 0px;
+    }
+}
+@media only screen and (max-width:425px){
+.d7{
+    margin-top: 0px;
+    height: 500px;
+}
+.d7 h2{
+    margin-left: 20px;
+    text-align: center;
+}
+.d72{
+    margin-top: 50px;
+    margin-right: 50px;
+}
+}

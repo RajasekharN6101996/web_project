@@ -1,0 +1,36 @@
+.d8{
+    width: 100%;
+    height: 550px;
+    background: white;
+}
+div.kk{
+    margin-left: 350px;
+    width: 650px;
+    padding: 5px;
+    border: 5px solid gold;
+
+}
+.d82{
+background-color: gold;
+}
+.kk p{
+    opacity: 0.5;
+}
+@media only screen and (max-width:768px){
+div.kk{
+margin-left: 50px;
+}
+}
+@media only screen and (max-width:425px){
+.d82{
+    display: none;
+}
+.d8{
+    height: 300px;
+}
+div.kk{
+    margin-left: 10px;
+    width: 390px;
+    border-bottom: 15px solid gold;
+}
+}

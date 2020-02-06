@@ -1,0 +1,154 @@
+<!--*************************************************************************************************** 
+Name:Rajasekhar.N
+start:7/12/2019
+dec:Data Storage
+ ***************************************************************************************************-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./project.css">
+  <script src="./project.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body onload="open()">
+  <!-- form -->
+  <div class="container-fluid mt-1">
+    <div class="row ">
+      <div class="col-4 side fa1">
+        <h2 class="text-uppercase shadow p-3 mb-3 bg-white rounded mt-2 fa2 ">enter your task<br>
+          <div class="progress" style="height: 2px;width: 50%;">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%">
+            </div>
+          </div>
+        </h2>
+        <form class="shadow p-3 mb-5 bg-white rounded fa2">
+            <!-- Name -->
+          <div class="form-group">
+            <label for="in1"><b>Name</b></label>
+            <input id="in1" required type="text" class="form-control" name="" id="" aria-describedby="helpId"
+              placeholder="Name">
+            <small id="helpId" class="form-text text-muted">Eg:Raja,etc;</small>
+          </div>
+          <!-- Category -->
+          <label for="s1"><b>Category</b></label>
+          <select name="" required id="s1" style="width: 100%;" class="mb-1 p-2 rounded-lg">
+            <option value="">select your category</option>
+            <option value="sports">Sports</option>
+            <option value="study">Study</option>
+            <option value="meatings">Meatings</option>
+            <option value="classes">classes</option>
+          </select>
+          <!-- Priacity -->
+          <label for="s2"><b>Priacity</b></label>
+          <select name="" required id="s2" style="width: 100%;" class="mb-1 p-2 rounded-lg border-secondry">
+            <option value="">Set Priority</option>
+            <option value="very High">Very High</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">low</option>
+            <option value="very low">Very low</option>
+          </select>
+          <!-- start date -->
+          <div class="form-group">
+            <label for="d1"><b>Start Date</b></label>
+            <input type="date" required class="form-control" name="" id="d1" aria-describedby="helpId"
+              placeholder="Start Date">
+            <small id="helpId" class="form-text text-muted">Eg:01/01/2020</small>
+          </div>
+          <!-- end date -->
+          <div class="form-group">
+            <label for="d2">End Date</label>
+            <input type="date" required class="form-control" name="" id="d2" aria-describedby="helpId"
+              placeholder="End Date">
+            <small id="helpId" class="form-text text-muted">Eg:02/01/2020</small>
+          </div>
+
+        </form>
+        <button class="bg-primary px-5 rounded-lg ml-5 border-dark" id="bu1" onclick="st()"><b>Submit</b></button>
+        <button class="bg-primary px-5 rounded-lg ml-auto border-dark" id="bu2" onclick="up()"><b>Update</b></button>
+
+
+      </div>
+      <div class="col-7 side1 ml-5">
+        <h1 class="text-center shadow p-3 mb-5 bg-white rounded mt-2">
+          <div class="" style="width: 100%;height: 2px;">
+            <div class="progress p1" style="width: 100%;height: 2px;">
+              <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar"
+                style="width: 100%;">
+              </div>
+            </div>
+          </div>
+          <!-- display table -->
+          List Of Items <br>
+          <div class="bg-primary" style="width: 100%;height: 2px;">
+            <div class="progress p2" style="width: 100%;height: 2px;">
+              <div class="progress-bar bg-white progress-bar-striped progress-bar-animated " role="progressbar"
+                style="width: 100%;">
+              </div>
+            </div>
+          </div>
+        </h1>
+        <!-- search bar -->
+        <input type="text" class="w-75 mx-auto rounded-lg ml-4 border-dark pl-1" placeholder="Enter"
+          style="display:block;" id="ni1"><br>
+        <button id="nb1" class="bg-primary border-dark px-5 rounded-lg " style="display:block;" onclick="sea1(0)"><b
+            class="text-white">Search</b></button>
+        <button id="nb1" class="bg-primary border-dark px-5 rounded-lg mx-auto" style="display:block;margin-top: -30px;"
+          onclick="sea1(1)"><b class="text-white">Comlete</b></button>
+        <button id="nb1" class="bg-primary border-dark px-5 rounded-lg ml-auto mb-2"
+          style="display:block;margin-top: -30px;" onclick="sea1(2)"><b class="text-white">InComlete</b></button>
+<!-- table -->
+        <table id="tt1" class="table table-striped table-inverse table-responsive border">
+          <thead class="thead-inverse">
+            <tr>
+              <th class="px-5">Name</th>
+              <th class="px-4">Category</th>
+              <th class="px-4">Priority</th>
+              <th class="px-4"> Start Date</th>
+              <th class="px-4">End Date</th>
+              <th class="px-4">Completed</th>
+            </tr>
+            <tbody id="tt2">
+
+            </tbody>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- opening page -->
+  <div id="ani">
+    <h1 id="anh" class="border border-secondry text-center" style="margin-top: 300px;" onclick="hid()">Welcom Enter Your data <br>Click On Me</h1>
+  </div>
+  <button id="ref1"onclick="reff()" style="display: none;">
+    <img src="./iconmonstr-refresh-7-240.png" style="width: 40px;height: 40px;border-radius: 50%;margin-left: -3px;" alt="">
+  </button>
+  <!-- form end -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

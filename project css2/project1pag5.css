@@ -1,0 +1,43 @@
+.d5{
+    width: 100%;
+    background-color: silver;
+    height: 690px;
+}
+.g5{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 550px;
+}
+.g5 h2{
+    margin-top: 70px;
+    margin-left: 50px;
+}
+.g5 p{
+    margin-left: 50px;
+    opacity: 0.5;
+}
+.g5 img{
+    width: 600px;
+}
+.ic5{
+    font-size: 25px;
+    display: inline;
+    color: gold;
+}
+
+@media only screen and (max-width:768px){
+    .g5 img{
+        margin-top: 100px;
+        width: 400px;
+    }
+}
+@media only screen and (max-width:425px){
+    .g5{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 400px;
+    }
+    .d5{
+        height: 1000px;
+    }
+}

@@ -1,0 +1,111 @@
+.d2{
+    width: 100%;
+    background-color: white;
+    height: 690px;
+}
+.flex1{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+justify-content: space-between;
+text-align: center;
+padding: 20px 100px;
+}
+.ic1{
+    font-size: 50px;
+}
+.ic2{
+    color: gold;
+}
+.ic3{
+    color: red;
+}
+.ic5{
+    color: pink;
+}
+.ic6{
+    color: purple;
+}
+.ic7{
+    color: blue;
+}
+.d21{
+    column-count: 2;
+}
+.d2s1{
+    opacity: 0.5;
+    font-size: 17px;
+
+}
+.d2s2{
+    font-size: 20px;
+}
+.ab1{
+    text-align: center;
+}
+.d22{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.nu{
+    font-size: 45px;
+}
+.d221{
+margin-left: 10px;    
+}
+.d221 > p{
+    position: relative;
+    top: -70px;
+    left: 30px;
+}
+.d221  a{
+    color: gold;
+}
+@media only screen and (max-width:768px){
+.ic1{
+    font-size: 50px;
+}
+.d2{
+    height: 900px;
+}
+.flex1{
+padding: 20px 50px;
+}
+.d21 p{
+    margin-left: 10px;
+}
+.d22{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px;
+}
+.d221 h1{
+    margin-left: 300px;
+}
+.d221 > p{
+    position: relative;
+    left: 330px;
+}
+}
+@media only screen and (max-width:425px){
+    .flex1{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-rows: 100px 100px 100px;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 50px;
+    }
+    .d21{
+        column-count: 1;
+    }
+    .d2{
+        height: 1300px;
+    }
+    .d221 h1{
+        margin-left: 120px;
+    }
+    .d221 > p{
+        position: relative;
+        left: 150px;
+    }
+}

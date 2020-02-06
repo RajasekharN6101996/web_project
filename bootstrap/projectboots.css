@@ -1,0 +1,58 @@
+.background1{
+    background-image: url(./bg.png);
+    background-size: 100%;
+}
+.ic{
+    width: 30px;
+}
+.ic1::before,.ic1::after{
+    display: inline-block;
+    height: 3px;
+    width: 140px;
+    content: " ";
+    background-color: rgb(78, 78, 241);
+    vertical-align: middle;
+}
+.ic2::before,.ic2::after{
+    display: inline-block;
+    height: 3px;
+    width: 140px;
+    content: " ";
+    background-color:white;
+    vertical-align: middle;
+}
+.bgg1{
+    background-color:blue;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 15px;
+
+}
+.bgg2{
+    background: blue;
+    box-shadow: 0px 15px 15px;
+}
+.ai1{
+    width: 50px;
+    padding-top: 5px;
+}
+.chat{
+    width: 25px;
+}
+.mapp{
+    height: 500px;
+}
+.bo{
+    border: 0px solid white;
+    border-bottom: 1px solid black;
+}
+.fo1{
+    width: 25px;
+    margin-right: 500px;
+}
+.fo2{
+    margin-right: 200px;
+}
+.pbb{
+    top: -700px;
+}

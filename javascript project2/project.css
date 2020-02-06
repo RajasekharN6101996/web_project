@@ -1,0 +1,9 @@
+.hov:hover > .ho1{
+    display: none;
+}
+.ho2{
+    display: none;
+}
+.hov:hover > .ho2{
+    display: block;
+}

@@ -1,0 +1,122 @@
+.side{
+    box-shadow: 20px 0px 20px;
+}
+.side1{
+    box-shadow: -10px 0px 50px;
+}
+.sear{
+    width: 780px;
+    height: 80%;
+    background:white;
+    top: 120px;
+}
+.p1{
+    animation-name: p;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+.p2{
+    animation-name: pp;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;   
+}
+.fa2{
+    animation-name: faa;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.fa1{
+    animation-name: fa;
+    animation-duration: 2s;
+}
+#ani{
+    width: 100%;
+    height: 690px;
+    position: absolute;
+    top: 0px;
+    background-image: url(./banner-png-18.png);
+    background-size: 100% 690px;
+}
+#anh{
+    color: white;
+    background-image: linear-gradient(60deg,red,black,blue,green,orange);
+    animation-name: ani1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#ref1{
+    width: 48px;
+    height: 48px;
+    border: 2px solid silver;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 380px;
+}
+@keyframes ani1{
+    0%{
+    background-image: linear-gradient(60deg,orange,red,black,blue,green);
+    }
+    20%{
+        background-image: linear-gradient(60deg,green,orange,red,black,blue);
+    }
+    40%{
+        background-image: linear-gradient(60deg,blue,green,orange,red,black);
+    }
+    60%{
+        background-image: linear-gradient(60deg,black,blue,green,orange,red);
+    }
+    80%{
+        background-image: linear-gradient(60deg,red,black,blue,green,orange);
+    }
+    100%{
+        background-image: linear-gradient(60deg,orange,red,black,blue,green);
+    }
+}
+@keyframes faa{
+    from{
+        margin-left: -400px;
+    }
+    to{
+        margin-left: 100px;
+    }
+}
+@keyframes fa{
+    from{
+        margin-left: -400px;
+    }
+    to{
+        margin-left: 50px;
+    }
+}
+@keyframes p{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+@keyframes pp{
+    0%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}

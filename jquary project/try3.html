@@ -1,0 +1,657 @@
+<!-- **************************************************************************************
+name=Rajasekhar
+discription=jquary project
+start=25/12/19
+************************************************************************************** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./jquery-ui-1.12.1.custom/jquery-ui.css">
+    <link rel="stylesheet" href="./project.css">
+    <script src="https://kit.fontawesome.com/f8aa197cbc.js" crossorigin="anonymous"></script>
+
+    <title>Document</title> 
+    <script>
+        $(document).ready(function () {
+            $("#hi").fadeOut(2500);
+            $("#sl1").show("slide", { direction: 'down' }, 2000);
+            $("#fo").show("slide", { direction: 'right' }, 2000);
+            $(".ni2").click(function(){
+                $(".ns2").slideDown(1000);
+                $(".ns1").slideUp(1000);
+                $(".ns3").slideUp(1000);
+                $(".ni2").css("background","black")
+                $(".ni1").css("background","gold")
+                $(".ni3").css("background","gold")
+            });
+            $(".ni3").click(function(){
+                $(".ns3").slideDown(1000);
+                $(".ni3").css("background","black")
+                $(".ns1").slideUp(1000);
+                $(".ni1").css("background","gold")
+                $(".ns2").slideUp(1000);
+                $(".ni2").css("background","gold")
+            });
+            $(".ni1").click(function(){
+                $(".ns1").slideDown(1000);
+                $(".ns2").slideUp(1000);
+                $(".ns3").slideUp(1000);
+                $(".ni1").css("background","black")
+                $(".ni2").css("background","gold")
+                $(".ni3").css("background","gold")
+
+
+            });
+            $(window).scroll(function () {
+                var ws = $(this).scrollTop();
+                if (ws > 50) {
+                $(".icn").css("fontSize","50px")
+                $(".icn").css("top","0px")
+                $(".icn").css("left","110px")
+                }
+            });
+            $(window).scroll(function () {
+                var ws = $(this).scrollTop();
+                if (ws < 50) {
+                $(".icn").css("fontSize","60px")
+                $(".icn").css("top","-10px")
+                $(".icn").css("left","100px")
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".s1").offset().top;
+                var wh1 = $(".s1").outerHeight();
+                // console.log(wh);
+                if (ws > (ht + wh1 - wh)) {
+                    $(".ps1").show("slide", { direction: 'down' }, 1000)
+                    $(".ps2").show("slide", { direction: 'down' }, 1500)
+                    $(".ps3").show("slide", { direction: 'down' }, 2000)
+                    $(".ps4").show("slide", { direction: 'down' }, 2500)
+                    $(".ps5").show("slide", { direction: 'down' }, 3000)
+                    $(".ps6").show("slide", { direction: 'down' }, 3500)
+
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".s1").offset().top;
+                var wh1 = $(".s1").outerHeight();
+                console.log(wh);
+
+                if (ws > (500 + ht + wh1 - wh)) {
+                    $(".ps7").show("slide", { direction: 'down' }, 1000)
+                    $(".ps8").show("slide", { direction: 'down' }, 1500)
+                    $(".ps9").show("slide", { direction: 'down' }, 2000)
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".pt").offset().top;
+                var wh1 = $(".pt").outerHeight();
+                if (ws > (ht + wh1 - wh)) {
+                    $(".th1").show("slide", { direction: 'down' }, 1000)
+                    $(".th2").show("slide", { direction: 'down' }, 1500)
+                    $(".th3").show("slide", { direction: 'down' }, 2000)
+                    $(".th4").show("slide", { direction: 'down' }, 2500)
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".pt").offset().top;
+                var wh1 = $(".pt").outerHeight();
+                if (ws > (100 + ht + wh1 - wh)) {
+                    $(".th5").show("slide", { direction: 'down' }, 1000)
+                    $(".th6").show("slide", { direction: 'down' }, 1500)
+                    $(".th7").show("slide", { direction: 'down' }, 2000)
+                    $(".th8").show("slide", { direction: 'down' }, 2500)
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".cf").offset().top;
+                var wh1 = $(".cf").outerHeight();
+                if (ws > (ht + wh1 - wh-100)) {
+                    // $(".im").show("scale", { percent: 0, direction: 'both', origin: ['middle', 'middle'] }, 500)
+                    $(".im").show("bounce", 700)
+
+                }
+            })
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".cfi").offset().top;
+                var wh1 = $(".cfi").outerHeight();
+                if (ws > (ht + wh1 - wh)) {
+                    $(".im2").show("slide", { direction: 'right' }, 500);
+                    $(".fs1").show("slide", { direction: 'left' }, 500);
+                    $(".fs2").show("slide", { direction: 'left' }, 1000);
+                    $(".fs3").show("slide", { direction: 'left' }, 1500);
+                }
+            })
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".si").offset().top;
+                var wh1 = $(".si").outerHeight();
+                if (ws > (ht + wh1 - wh)) {
+                    $(".si1").show("slide", { direction: 'down' }, 1000)
+                    $(".si2").show("slide", { direction: 'down' }, 1500)
+                    $(".but1").show("scale", {percent: 0, direction: 'both', origin: ['middle','middle']},1000)
+                    // $(".but1").show("clip", 2000)
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".ni").offset().top;
+                var wh1 = $(".ni").outerHeight();
+                if (ws > (ht + wh1 - wh)) {
+                    // $(".ni1").show("fade", 1000)
+                    $(".ni1").show("scale", {percent: 0, direction: 'both', origin: ['middle','middle']},1000)
+                    $(".ni2").show("slide", { direction: 'up' }, 1500)
+                    $(".ni3").show("slide", { direction: 'down' }, 2000)
+                    // $(".ni2").show("blind", 2000)
+
+
+                }
+            });
+            $(window).scroll(function () {
+                var wh = $(window).height();
+                var ws = $(this).scrollTop();
+                var ht = $(".te").offset().top;
+                var wh1 = $(".te").outerHeight();
+                if (ws > (ht + wh1 - wh - 300)) {
+                    $(".te1").show("slide", { direction: 'down' }, 1000)
+                    $(".te2").show("slide", { direction: 'down' }, 1500)
+                    $(".te3").show("slide", { direction: 'down' }, 2000)
+                }
+            });
+           
+
+        })
+        globel=0;
+        globel1=0;
+        globel2=0;
+        globel3=0;
+         setInterval(number,30);
+         setInterval(number1,100);
+            setInterval(number2,50);
+            setInterval(number3,100);
+        function number(){
+            var k=document.getElementById("num1");
+            globel=globel+118;
+            if(globel<=56404){
+                k.innerHTML=globel;
+            }
+            else if(globel>56404){
+                globel=0;
+            }
+        }
+        function number1(){
+            var k=document.getElementById("num2");
+            globel1=globel1+1;
+            if(globel1<11){
+                k.innerHTML=globel1;
+            }
+            else if(globel1>10){
+                globel1=0;
+            }
+        }
+        function number2(){
+            var k=document.getElementById("num3");
+            globel2=globel2+2233;
+            if(globel2<=239393){
+                k.innerHTML=globel2;
+            }
+            else if(globel2>239393){
+                globel2=0;
+            }
+        }
+        function number3(){
+            var k=document.getElementById("num4");
+            globel3=globel3+4;
+            if(globel3<=24){
+                k.innerHTML=globel3;
+            }
+            else if(globel3>24){
+                globel3=0;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="hi" style="z-index: 2;">
+        <div class="dot text-center" id="do1"></div>
+        <div class="dot text-center" id="do2"></div>
+    </div>
+    <!-- nav bar -->
+    <nav class="nav nav12 w-100 pb-3" style="position: fixed;z-index: 1;">
+        <a class="nav-link text-white" href="#" style="font-size: 30px;margin-top: -20px;"><span
+                style="font-size: 60px;position: absolute;top: -10px;left: 100px;" class="icn">&copy;</span><span
+                style="position: absolute;top: 15px;left: 160px;">CC-ICO</span></a>
+        <div class="nav mt-3 pr-5 ml-auto" style="font-size: 20px;">
+            <a class="nav-link text-white" href="#home">Home</a>
+            <a class="nav-link text-white" href="#pag2">About</a>
+            <a class="nav-link text-white" href="#">Features</a>
+            <a class="nav-link text-white" href="#">Dashbord</a>
+            <a class="nav-link text-white" href="#">Buy Now</a>
+            <a class="nav-link text-white" href="#">Testimonial</a>
+            <a class="nav-link text-white" href="#">Faq</a>
+            <a class="nav-link text-white" href="#">Contact Us</a>
+        </div>
+
+    </nav>
+    <!-- end nav -->
+    <!-- home -->
+    <div class="container-fluid pt-5 s1" id="home" style="background-color: navy;">
+        <div class="row pb-5 pt-5 pl-3">
+            <div class="col-6 ml-5 pl-5 text-white">
+                <div id="sl1" style="display: none;">
+                    <h4 class="text-uppercase">Fastest & Easiesty Way To <h4>
+                            <h1 style="font-size: 50px;">Bye, Sell, Trade</h1><br>
+                            <h4 class="text-uppercase">cryptocurrencies<h4><br><br>
+                                    <p style="font-size: large;">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                        elit. <br>
+                                        Hic nihil at iusto quam quos in, enim dolor nostrum numquam maxime, pariatur
+                                        quibusdam dolores excepturi ipsa? Aliquid dolore rem id sed?
+                                        quibusdam dolores excepturi ipsa? Aliquid dolore rem id sed?
+                                        Hic nihil at iusto quam quos in, enim dolor nostrum numquam maxime, pariatur
+                                        Hic nihil at iusto quam quos in, enim dolor nostrum numquam maxime, pariatur
+                                    </p><br><br>
+                                    <div class="container-fluid d-inline-block" style="width: 280px;">
+                                        <div class="row border border-warning rounded-lg">
+                                            <div class="col-4">
+                                                <i class="fab fa-apple sy1" style="font-size: 50px;"></i>
+                                            </div>
+                                            <div class="col-8 pt-1">
+                                                <p style="font-size: large;">Downlode on any <br>
+                                                    <b><span style="font-size: x-large;">App Store</span></b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container-fluid float-right" style="width: 280px;">
+                                        <div class="row border border-warning rounded-lg">
+                                            <div class="col-4 p-1">
+                                                <i class="fab fa-google-play" style="font-size: 50px;"></i>
+                                            </div>
+                                            <div class="col-8 pt-1">
+                                                <p style="font-size: large;">Downlode on any <br>
+                                                    <b><span style="font-size: x-large;">Google Play</span></b></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                </div>
+
+            </div>
+            <div class="col-5 pt-5">
+                <h3 class="text-white text-center">Free Registration</h3>
+                <form class="bg-light w-75 mx-auto text-center p-1" id="fo" style="display: none;">
+                    <br><input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"><br><br>
+                    <input class="fs" type="email" placeholder="Email"><br><br>
+                    <input type="number" class="fs" placeholder="Phone number"><br><br>
+                    <select class="fs">
+                        <option selected>india</option>
+                        <option>Japan</option>
+                    </select><br><br>
+                    <button class="fs text-uppercase" id="b1">Open Account</button><br><br>
+                    <p><span>Accept</span> <a href="">Terms & conditions</a></p>
+                </form>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+    <!-- end homw -->
+    <!-- second page -->
+    <div class="container-fluid my-5" id="pag2">
+        <div class="row w-100 text-center mt-3">
+            <div class="col-2 ps1 font1">
+                <i class="fab fa-bitcoin ic1  ic2"></i><br>
+                <span class="sc">8000.50USD</span>
+            </div>
+            <div class="col-2 ps2 font1">
+                <i class="fab fa-monero ic1  ic3"></i><br>
+                <span class="sc">5640.50USD</span>
+            </div>
+            <div class="col-2 ps3 font1">
+                <i class="fab fa-ethereum ic1  ic4"></i><br>
+                <span class="sc">1235.50USD</span>
+
+            </div>
+            <div class="col-2 ps4 font1">
+                <i class="fab fa-neos ic1 ic6"></i><br>
+                <span class="sc">456.25USD</span>
+            </div>
+            <div class="col-2 ps5 font1">
+                <i class="fab fa-artstation ic1 ic7"></i><br>
+                <span class="sc">622.USD</span>
+            </div>
+            <div class="col-2 ps6 font1">
+                <i class="fab fa-ethereum ic1  ic4"></i><br>
+                <span class="sc">1235.50USD</span>
+            </div>
+
+        </div>
+        <h1 class="text-center mt-3"><u>About Us</u></h1>
+        <div class="d21">
+            <p><br><span class="d2s1">Lorem ipsum, dolor sit amet consectetur adipisicing
+                    elit. Illo quos dolorem ad esse, molestias officia obcaecati
+                    incidunt culpa optio, quibusdam nulla fuga autem fugiat. Esse eaque
+                    et quaerat commodi quis?Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Deserunt cum tempora, distinctio vero excepturi corrupti perspiciatis aliquam ab
+                    eaque voluptatem laudantium, voluptas
+                    eum quam fuga? Quia fuga eum inventore optio. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Neque quasi <br><br><br><br> minus optio! </span>
+                <br><br><span class="d2s2">Veritatis reiciendis consectetur sit alias
+                    quo nobis vitae illum quisquam
+                    modi ex nostrum esse, reprehenderit saepe adipisci natus!
+                    Illum deleniti deserunt quam explicabo repellat eligendi expedita placeat? </span></p>
+        </div>
+        <h2 class="text-center py-3"><u>Easy To Buy Crypto Currency</u></h2>
+        <div class="row w-100" id="op1">
+            <div class="col-4 font1 ps7">
+                <b class="nu" style="margin-left: 150px;">1</b>
+                <p style="margin-top: 10px;"><a href="" style="color: gold;">Register</a>your<br>trading account.</p>
+            </div>
+            <div class="col-4 pl-5 font1 ps8">
+                <p><i class="fas fa-arrow-circle-right"
+                        style="font-size: 40px;margin-top: 10px;display: inline-block;"></i><span
+                        style="font-size: 40px;"><b>2</b></span>
+                    <p style="margin-top: -65px;margin-left: 75px;"><a href="" style="color: gold;">Deposit the
+                            fundes</a>in the<br>one houre.</p>
+                </p>
+            </div>
+            <div class="col-4 font1 ps9">
+                <p><i class="fas fa-arrow-circle-right"
+                        style="font-size: 40px;margin-top: 10px;display: inline-block;"></i><span
+                        style="font-size: 40px;"><b>3</b></span>
+                    <p style="margin-top: -65px;margin-left: 75px;"><a href="" style="color: gold;">Bye &
+                            Sell</a>any<br>cryptocurrency.</p>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <!-- end second -->
+    <!-- third page -->
+    <div class="container-fluid pt pb-5" style="background-color: black;color: white;">
+        <h1 class="text-center py-5">Why Choose Us?</h1>
+        <div class="row">
+            <div class="col-3 text-center font1 th1">
+                <h2>Fair</h2><br>
+                <div><i class="fas fa-calculator i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th2">
+                <h2>Fast</h2><br>
+                <div><i class="fas fa-fighter-jet i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th3">
+                <h2>Secure</h2><br>
+                <div><i class="fas fa-lock i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th4">
+                <h2>Multicoin</h2><br>
+                <div><i class="fas fa-coins i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3 text-center  font1 th5">
+                <h2>Online payment</h2><br>
+                <div><i class="far fa-credit-card i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th6">
+                <h2>Legal</h2><br>
+                <div><i class="fas fa-file-contract i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th7">
+                <h2>Commisions</h2><br>
+                <div><i class="fas fa-percentage i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+            <div class="col-3 text-center  font1 th8">
+                <h2>Withdraw</h2><br>
+                <div><i class="far fa-arrow-alt-circle-down i2"></i></div><br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, obcaecati
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- end page -->
+    <!-- page four -->
+    <div class="container-fluid cf pb-5 pr-4"  style="border: 5px groove blue;">
+        <div class="row mt-5">
+            <div class="col-6">
+                <img src="buy-bitcoin-img.PNG" alt="" class="w-100 im" style="display: none;border: 5px groove blue;">
+            </div>
+            <div class="col-6" style="border: 5px groove blue;background-color: black;">
+                <h2 style="color: white;"><u>How to buy sell <br> CryptoCurrency?</u></h2><br>
+                <p style="color: silver;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                    praesentium <br> similique culpa quidem libero tempore ex possimus, nostrum expedita sit vitae,
+                    enim <br> ducimus dignissimos quam omnis repellat veniam modi itaque. Lorem ipsum dolor, sit amet
+                    consectetur
+                    adipisicing elit. Dignissimos optio cupiditate, temporibus eum magni impedit facere! Soluta et quam,
+                    consectetur
+                    corrupti repudiandae tempora similique laudantium distinctio dolorum, sit, unde quisquam.</p>
+                <p style="color: silver;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloremque
+                    distinctio in ullam? <br>
+                    adipisicing elit. Quam atque fuga ea
+                    perferendis qui, totam laborum modi eligendi, aliquid excepturi magni recusandae placeat sequi! Aut
+                    dolorem dolor porro neque.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end page -->
+    <!-- page five -->
+    <div class="container-fluid cfi pb-5" style="color: white;background-color: black;">
+        <h1 class="text-center py-5">Create Your Portfolio</h1>
+        <div class="row">
+            <div class="col-6">
+                <div class="row mt-2 ml-5 fs1" style="display: none;">
+                    <h2><i class="fas fa-tasks ic5 text-warning"></i> Manage portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at.</p>
+                </div>
+                <div class="row mt-2 fs2 ml-5" style="display: none;">
+                    <h2><i class="fas fa-mobile ic5 text-warning"></i> Mobile app</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at.</p>
+                </div>
+                <div class="row mt-2 ml-5 fs3 " style="display: none;">
+                    <h2><i class="fas fa-shield-alt ic5 text-warning"></i> Vault protections</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, at.</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="./dashbord-img.PNG" style="display: none;" class="w-75 im2" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- end page -->
+    <!-- page six -->
+    <div class="container-fluid mt-5 si">
+        <h1 class="text-center mb-5 pb-5">Bye CryptoCurrency</h1>
+        <h3 class="text-center mb-5 font1 si1">Bye and sell Coins at the CC-ICO <br>
+            with out additional fee</h3>
+        <p class="text-center mb-5 font1 si2" style="color: silver;">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, autem.
+        </p>
+        <center>
+        <div class="but1 w-50 font1 text-center bg-dark pb-2 rounded-lg mb-5">
+            <button class="d6b1"><b>1</b></button>
+            <b class="text-white">BTC=</b>
+            <button class="d6b1 w1"><b>84734.09</b></button>
+            <button class="d6b1"><b>USD</b></button>
+        </div>
+            </center>
+        <div class="row mb-5">
+            <button class="mx-auto px-5 py-2 rounded-lg text-white " style="background-color: black;">Bye Now</button>
+        </div>
+        <h3 class="text-center mb-5">Trade on the go download the app</h3>
+        <div class="d6e mb-5"><input type="text" placeholder="enter your mobile number"><button class="rounded-lg">Get
+                Started</button></input></div>
+    </div>
+    <!-- end page -->
+    <!-- page seven -->
+    <div class="container-fluid pb-5 pse">
+        <div class="row pt-5">
+            <div class="col-3">
+                <h1 class="text-white text-center" id="num1">56404</h1>
+                <div class="line1 mx-auto"></div>
+                <h2 class="text-center text-white">$ transation per day</h2>
+            </div>
+            <div class="col-3">
+                <h1 class="text-white text-center" id="num2">10</h1>
+                <div class="line1 mx-auto"></div>
+                <h2 class="text-center text-white">year of experience</h2>
+            </div>
+            <div class="col-3">
+                <h1 class="text-white text-center" id="num3">239393</h1>
+                <div class="line1 mx-auto"></div>
+                <h2 class="text-center text-white">registerd users</h2>
+            </div>
+            <div class="col-3">
+                <h1 class="text-white text-center" id="num4">24</h1>
+                <div class="line1 mx-auto"></div>
+                <h2 class="text-center text-white">award winning</h2>
+            </div>
+        </div>
+    </div>
+    <!-- end page -->
+    <!-- page eight -->
+    <div class="container-fluid mt-5">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h1 class="text-center">Testimolial</h1>
+                <div class="row my-5">
+                    <div class="col-7">
+                        <h4>
+                            ipsum dolor sit amet consectetur adipisicing elit. Harum, eius?
+                            Placeat vitae praesentium exercitationem perspiciatis!
+                        </h4>
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="d72"><i class="fab fa-bitcoin text-warning" style="font-size: xx-large;"></i><br>
+                            <h3>Rajasekhar.N</h3>
+                            <p style="color: silver;">bitcoin byer</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h1 class="text-center">Testimolial</h1>
+                <div class="row my-5">
+                    <div class="col-7">
+                        <h4>
+                            ipsum dolor sit amet consectetur adipisicing elit. Harum, eius?
+                            Placeat vitae praesentium exercitationem perspiciatis!
+                        </h4>
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="d72"><i class="fab fa-bitcoin text-warning" style="font-size: xx-large;"></i><br>
+                            <h3>Rajasekhar.N</h3>
+                            <p style="color: silver;">bitcoin byer</p>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- end page -->
+    <!-- page nine -->
+    <center>
+    <div class="container-fluid mt-5 pb-5 ni" style="color: white;background-color: black;">
+        <h1 class="text-center py-5"><u> Frequently Asked Questions </u></h1>
+        <div class="row mb-3 w-50 p-2 font1 ni1" style="border: 5px solid gold;">
+            <h3>What is ICO?</h3>
+            <p class="ns1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit incidunt quia
+                natus autem, beatae ipsam sit quas voluptates ea vitae esse! Illum, saepe!</p>
+        </div>
+        <div class="row w-50 mb-3 p-2 font1 ni2"  style="border: 5px solid gold;background-color: gold;">
+            <h3>What market says?</h3>
+            <p class="ns2 font1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit incidunt quia
+                natus autem, beatae ipsam sit quas voluptates ea vitae esse! Illum, saepe!</p>
+        </div>
+        <div class="row w-50 p-2 font1 ni3"  style="border: 5px solid gold;background-color: gold;">
+            <h3>What is Crypto currency?</h3>
+            <p class="ns3 font1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit incidunt quia
+                natus autem, beatae ipsam sit quas voluptates ea vitae esse! Illum, saepe!</p>
+        </div>
+    </div>
+    </center>
+    <!-- end page -->
+    <!-- page ten -->
+    <div class="container-fluid mt-5 te">
+        <h2 class="text-center mb-5">Contact Us</h2>
+        <form action="">
+            <input class="i9 te1" type="text" placeholder="your name"><br><br>
+            <input class="i9 te2" type="text" placeholder="your email"><br><br>
+            <textarea class="i9 te3 tt" name="text" id="text" cols="30" rows="10"
+                placeholder="write message here"></textarea>
+            <br><br>
+            <div class="row mb-5">
+                <button class="b9 text-white mx-auto"><b>Submit</b></button>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-8 d9">
+                <img src="./social.PNG" alt="" style="position: relative; top: 100px; left: 200px;">
+                <nav>
+                    <ul>
+                        <li><a href="#home">home</a>
+                        </li>
+                        <li><a href="#about">about</a>
+                        </li>
+                        <li><a href="#features">features</a></li>
+                        <li><a href="#dashbord">dashbord</a></li>
+                        <li><a href="#buy-now">buy
+                                now</a></li>
+                        <li><a href="#testimonial">testimonial</a>
+                        </li>
+                        <li><a href="#faq">faq</a>
+                        </li>
+                        <li><a href="#contact-us">contact us</a></li>
+                    </ul>
+                </nav>
+                <p><i class="fas fa-envelope"></i> support@webstitename.com <i class="fas fa-phone-alt"></i>
+                    +919191919191</p>
+            </div>
+            <div class="col-4 mt-5">
+                <p class="p9"><b><span class="p9s">&copy;</span><span class="p9s1">cc-ico</span></b></p>
+                <p class="p91">&copy; 2018 CO-ICO All Rights Reserved<br>Design by Awaiken</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- end page -->
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
